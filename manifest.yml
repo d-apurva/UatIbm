@@ -1,0 +1,17 @@
+applications:
+- path: .
+  memory: 1G
+  env:
+    CACHE_NUGET_PACKAGES: false
+    CF_STAGING_TIMEOUT: 30
+    CF_STARTUP_TIMEOUT: 30
+    HEALTH-CHECK-TIMEOUT: 30
+  instances: 1
+  domain: mybluemix.net
+  name: pipeline-aspdotnet
+  host: pipeline-aspdotnet
+  disk_quota: 1024M  
+  
+  
+  
+ 
