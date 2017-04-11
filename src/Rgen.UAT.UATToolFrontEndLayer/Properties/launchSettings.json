@@ -17,8 +17,7 @@
     },
     "Rgen.UAT.UATToolFrontEndLayer": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "http://localhost:8080",
+      "launchBrowser": true,     
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
