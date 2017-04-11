@@ -3,8 +3,8 @@ applications:
   memory: 1G
   env:
     CACHE_NUGET_PACKAGES: false
-    CF_STAGING_TIMEOUT: 30
-    CF_STARTUP_TIMEOUT: 30
+    CF_STAGING_TIMEOUT: 60
+    CF_STARTUP_TIMEOUT: 60
     HEALTH-CHECK-TIMEOUT: 60
   instances: 1
   domain: mybluemix.net
