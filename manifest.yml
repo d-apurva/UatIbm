@@ -12,6 +12,7 @@ applications:
   disk_quota: 1024M 
   timeout: 180
   no-route: true
+  buildpack: dotnet-core
   
   
  
