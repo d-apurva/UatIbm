@@ -6,6 +6,7 @@ applications:
     CF_STAGING_TIMEOUT: 60
     CF_STARTUP_TIMEOUT: 60
     HEALTH-CHECK-TIMEOUT: 60
+    PORT: 5000
   instances: 1
   domain: mybluemix.net
   name: pipeline-aspdotnet
