@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Configure the listening port to 80
 ENV ASPNETCORE_URLS http://*:80
+ENV PORT 80
 EXPOSE 80
 
 # Copy the app
