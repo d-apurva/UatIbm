@@ -11,7 +11,6 @@ applications:
   host: pipeline-aspdotnet
   disk_quota: 1024M 
   timeout: 180
-  no-route: true
   buildpack: dotnet-core_v1_0_10-20170124-1145
   
   
