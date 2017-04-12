@@ -3,15 +3,16 @@ applications:
   memory: 1G
   env:
     CACHE_NUGET_PACKAGES: false    
-    PORT: 8080
-    health-check-type: none
+    PORT: 8080    
   instances: 1
   domain: mybluemix.net
   name: pipeline-aspdotnet
   host: pipeline-aspdotnet
   disk_quota: 1024M 
   timeout: 180
-  buildpack: dotnet-core_v1_0_10-20170124-1145
+  buildpack: dotnet-core
+  no-route: true
+  health-check-type: none
   
   
  
