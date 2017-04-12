@@ -10,8 +10,7 @@ applications:
   host: pipeline-aspdotnet
   disk_quota: 1024M 
   timeout: 180
-  buildpack: dotnet-core
-  no-route: true
+  buildpack: dotnet-core  
   health-check-type: none
   
   
