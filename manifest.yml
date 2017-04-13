@@ -1,6 +1,6 @@
 applications:
 - path: .
-  memory: 1200M
+  memory: 1400M
   disk_quota: 1024M
   env:
     CACHE_NUGET_PACKAGES: false    
