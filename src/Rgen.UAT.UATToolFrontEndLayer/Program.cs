@@ -11,9 +11,13 @@ namespace Rgen.UAT.UATToolFrontEndLayer
     {
         public static void Main(string[] args)
         {
+            var config = new ConfigurationBuilder() //ADD THESE 3 LINES AT THE TOP OF THE MAIN METHOD
+                        .AddCommandLine(args)
+                        .Build();
+            
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseContentRoot(config) //ADD THIS LINE BEFORE 'UseStartup'
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
