@@ -47,7 +47,15 @@
 
   "buildOptions": {
     "emitEntryPoint": true,
-    "preserveCompilationContext": true
+    "preserveCompilationContext": true,
+    "copyToOutput": {
+      "include": [
+        "wwwroot",
+        "Areas/**/Views",
+        "Views",
+        "appsettings.json"
+      ]
+    }
   },
 
   "runtimeOptions": {

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace Rgen.UAT.UATToolFrontEndLayer
 {
@@ -17,7 +18,8 @@ namespace Rgen.UAT.UATToolFrontEndLayer
             
             var host = new WebHostBuilder()
                 .UseKestrel()
-                .UseContentRoot(config) //ADD THIS LINE BEFORE 'UseStartup'
+                //.UseContentRoot(Directory.GetCurrentDirectory())
+                .UseConfiguration(config) //ADD THIS LINE BEFORE 'UseStartup'
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
