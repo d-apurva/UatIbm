@@ -7,11 +7,12 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: uat-appdemo
-  host: uat-appdemo
-  disk_quota: 1024M 
+  host: uat-appdemo  
   timeout: 180
   buildpack: dotnet-core  
   health-check-type: none
+  "diego": true
+  
   
   
  
