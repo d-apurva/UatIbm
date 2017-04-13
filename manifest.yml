@@ -1,6 +1,6 @@
 applications:
 - path: .
-  memory: 800M
+  memory: 1G
   env:
     CACHE_NUGET_PACKAGES: false    
     PORT: 8080    
