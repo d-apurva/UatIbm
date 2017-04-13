@@ -1,10 +1,10 @@
 applications:
 - path: .
-  memory: 1000M
+  memory: 1200M
   disk_quota: 1024M
   env:
     CACHE_NUGET_PACKAGES: false    
-    PORT: 5000    
+    PORT: 8080    
   instances: 1
   domain: mybluemix.net
   name: uat-app-asdotnet
@@ -12,7 +12,7 @@ applications:
   timeout: 180
   buildpack: dotnet-core  
   health-check-type: none
-  "diego": true
+  random-route: true
   
   
   
