@@ -6,8 +6,8 @@ applications:
     PORT: 5000    
   instances: 1
   domain: mybluemix.net
-  name: pipeline-aspdotnet
-  host: pipeline-aspdotnet
+  name: pipeline-aspuat
+  host: pipeline-aspuat
   disk_quota: 1024M 
   timeout: 180
   buildpack: dotnet-core  
