@@ -1,7 +1,7 @@
 applications:
 - path: .
-  memory: 2G
-  disk_quota: 1G
+  memory: 1200M
+  disk_quota: 1024M
   env:
     CACHE_NUGET_PACKAGES: false    
     PORT: 5000    
